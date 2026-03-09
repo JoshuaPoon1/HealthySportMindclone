@@ -1,5 +1,6 @@
 import { useRouter } from "expo-router";
 import { useState } from "react";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
   ScrollView,
   Text,
@@ -28,10 +29,18 @@ export default function LoginScreen() {
         return;
       }
 
+      if (data.token) {
+        await AsyncStorage.setItem("accessToken", data.token);
+      }
+
       router.replace("/dashboard");
 
-    } catch {
-      setError("Network error. Try again.");
+    } catch (err) {
+      if (err.response?.data?.error) {
+        setError(err.response.data.error);
+      } else {
+        setError("Network error. Try again.");
+      }
     }
   }
 

@@ -23,4 +23,6 @@ urlpatterns = [
     path("auth/", include("api.auth_urls")),
 
     path("api/", include("api.rss_urls")),
+
+    path("api/", include("api.streaks_urls")),
 ]

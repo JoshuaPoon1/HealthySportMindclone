@@ -142,4 +142,81 @@ export default StyleSheet.create({
       color: "white",
       fontWeight: "800",
     },
+  
+  checkInButton: {
+    marginTop: 12,
+    backgroundColor: "#10b981",
+    paddingVertical: 10,
+    paddingHorizontal: 12,
+    borderRadius: 6,
+    alignSelf: "flex-start",
+  },
+
+  checkInButtonText: {
+    color: "white",
+    fontWeight: "600",
+    fontSize: 14,
+  },
+
+  checkInNotesInput: {
+    marginTop: 10,
+    borderWidth: 1,
+    borderColor: "#d1d5db",
+    borderRadius: 8,
+    padding: 10,
+    minHeight: 70,
+    textAlignVertical: "top",
+    backgroundColor: "white",
+    color: "#111827",
+  },
+
+  moodRow: {
+    marginTop: 10,
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 8,
+  },
+
+  moodButton: {
+    backgroundColor: "#e5e7eb",
+    paddingVertical: 6,
+    paddingHorizontal: 10,
+    borderRadius: 6,
+  },
+
+  moodButtonText: {
+    color: "#111827",
+    fontWeight: "600",
+    fontSize: 12,
+  },
+
+  modalBackdrop: {
+    flex: 1,
+    backgroundColor: "rgba(0,0,0,0.45)",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 20,
+  },
+
+  modalCard: {
+    width: "100%",
+    maxWidth: 460,
+    backgroundColor: "white",
+    borderRadius: 12,
+    padding: 16,
+  },
+
+  modalTitle: {
+    fontSize: 18,
+    fontWeight: "700",
+    marginBottom: 8,
+  },
+
+  modalCloseButton: {
+    marginTop: 14,
+    backgroundColor: "#6b7280",
+    paddingVertical: 10,
+    borderRadius: 6,
+    alignItems: "center",
+  },
 });
